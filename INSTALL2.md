@@ -97,6 +97,7 @@
 ```
 
 3. ติดตั้ง ffmpeg `conda install -c conda-forge ffmpeg`
+4. ติดตั้ง [torchvision](https://github.com/pytorch/vision/) ผ่าน souce
 
 
 
