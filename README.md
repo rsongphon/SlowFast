@@ -1,3 +1,5 @@
+## Repository สร้างเพื่อแนะนำการติดตั้งและใช้งาน codebase PySlowFast จาก Facebook AI Reserch เนื่องจากทางต้นทาง ไม่ได้เขียนไว้ละเอียดพอและมีปัญหาในขั้นตอนการติดตั้ง สำหรับผู้ที่สนใจสามารถอ่านคำแนะนำการติดตั้งได้ใน INSTALL.md
+
 # PySlowFast
 
 PySlowFast is an open source video understanding codebase from FAIR that provides state-of-the-art video classification models with efficient training. This repository includes implementations of the following methods:
