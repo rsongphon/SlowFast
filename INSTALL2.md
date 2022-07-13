@@ -62,15 +62,16 @@
           export USE_MKLDNN=1  
       
       2.8 ติดตั้ง CUDNN เลือกให้ตรงกับเวอร์ชั่น CUDA ที่ติดตั้งไปก่อนหน้า (โหลดให้ตรง OS ด้วย)
-      https://developer.nvidia.com/rdp/cudnn-archive
+          https://developer.nvidia.com/rdp/cudnn-archive
       
-      ดาวโหลด cuDNN Runtime, Developer and Code Samples library ใช้ตัวติดตั้ว Deb(.deb) 
-      และทำการติดตั้งด้วย
-      sudo dpkg -i libcudnn8_8.2.4.15–1+cuda11.4_amd64.deb
-      sudo dpkg -i libcudnn8-dev_8.2.4.15–1+cuda11.4_amd64.deb
-      sudo dpkg -i libcudnn8-samples_8.2.4.15–1+cuda11.4_amd64.deb
+          ดาวโหลด cuDNN Runtime, Developer and Code Samples library ใช้ตัวติดตั้ว Deb(.deb) 
+          และทำการติดตั้งด้วย
+          sudo dpkg -i libcudnn8_8.2.4.15–1+cuda11.4_amd64.deb
+          sudo dpkg -i libcudnn8-dev_8.2.4.15–1+cuda11.4_amd64.deb
+          sudo dpkg -i libcudnn8-samples_8.2.4.15–1+cuda11.4_amd64.deb
 ```
 
-2. ติดตั้ง Pytorch โดยการ Build ผ่าน Source
+2. ติดตั้ง Pytorch โดยการ Build ผ่าน Source ***แนะนำให้ทำใน virtual env อย่าง miniconda
+
 
 
