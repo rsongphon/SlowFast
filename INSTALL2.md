@@ -42,8 +42,25 @@
           
       2.5 Reboot เครื่อง และ Check Version CUDA ในกรณีนี้จะได้เป็น CUDA เวอร์ชั่น 11.4
       
-      2.6 ติดตั้ง CUDA Toolkit เลือกให้ตรงเวอร์ชั่น
+      2.6 ติดตั้ง CUDA Toolkit เลือกให้ตรงเวอร์ชั่น , OS 
           https://developer.nvidia.com/cuda-toolkit-archive
+          ในเคสนี้ใช้  Ubuntu20.4 ติดตั้งแบบ runfile (local)
+          wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda_11.4.0_470.42.01_linux.run
+          sudo sh cuda_11.4.0_470.42.01_linux.run --toolkit --silent --override
+          
+      2.7 ตั้งค่า enviroment variable ใน `~/.bashrc`
+          sudo nano ~/.bashrc
+          
+          เติม enviroment variable ต่อท้ายตามนี้ (ถ้าเป็น cuda เวอร์ชั่นอื่นเปลี่ยน cuda-11.4 เป็น cuda 11.x ตามที่ติดตั้ง)
+          
+          export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
+          export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH
+          export LD_LIBRARY_PATH=/usr/local/cuda-11.4/include:$LD_LIBRARY_PATH
+          export CUDA_HOME=/usr/local/cuda
+          export USE_CUDA=1 
+          export USE_CUDNN=1 
+          export USE_MKLDNN=1
+
 
 ```
 
