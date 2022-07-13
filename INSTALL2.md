@@ -1,5 +1,5 @@
 # วิธีการติดตั้ง PyslowFast
-# Note:ทดสอบบน Ubuntu 20.4
+## Note:ทดสอบบน Ubuntu 20.4
 1. ติดตั้ง CUDA 
 ```
   1. ถ้ามี Driver ติดตั้งแล้ว เช็คเวอร์ชั่น CUDA ที่ Compatible กับไดรเวอร์  (nvidia-smi) แนะนำให้ไม่เกินเวอร์ชั่น 11.6
@@ -40,7 +40,10 @@
       2.4 ติดตั้งไดรเวอร์ ไดรเวอร์ที่เป็นเวอร์ชั่น > 5xx จะมาพร้อม CUDA เวอร์ชั่นใหม่ แนะนำให้ติดตั้ง 4xx
           sudo apt-get install nvidia-driver-460
           
-      2.5
+      2.5 Reboot เครื่อง และ Check Version CUDA ในกรณีนี้จะได้เป็น CUDA เวอร์ชั่น 11.4
+      
+      2.6 ติดตั้ง CUDA Toolkit เลือกให้ตรงเวอร์ชั่น
+          https://developer.nvidia.com/cuda-toolkit-archive
 
 ```
 
