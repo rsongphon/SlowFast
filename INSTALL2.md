@@ -1,6 +1,6 @@
 # วิธีการติดตั้ง PyslowFast
 ## Note:ทดสอบบน Ubuntu 20.4
-1. ติดตั้ง CUDA 
+1. ติดตั้ง CUDA  + CUDNN
 ```
   1. ถ้ามี Driver ติดตั้งแล้ว เช็คเวอร์ชั่น CUDA ที่ Compatible กับไดรเวอร์  (nvidia-smi) แนะนำให้ไม่เกินเวอร์ชั่น 11.6
         (optinal) หากไดรเวอร์ใหม่เกิน CUDA > 11.6 แนะนำให้ลบออกให้หมดก่อน
@@ -59,9 +59,18 @@
           export CUDA_HOME=/usr/local/cuda
           export USE_CUDA=1 
           export USE_CUDNN=1 
-          export USE_MKLDNN=1
-
-
+          export USE_MKLDNN=1  
+      
+      2.8 ติดตั้ง CUDNN เลือกให้ตรงกับเวอร์ชั่น CUDA ที่ติดตั้งไปก่อนหน้า (โหลดให้ตรง OS ด้วย)
+      https://developer.nvidia.com/rdp/cudnn-archive
+      
+      ดาวโหลด cuDNN Runtime, Developer and Code Samples library ใช้ตัวติดตั้ว Deb(.deb) 
+      และทำการติดตั้งด้วย
+      sudo dpkg -i libcudnn8_8.2.4.15–1+cuda11.4_amd64.deb
+      sudo dpkg -i libcudnn8-dev_8.2.4.15–1+cuda11.4_amd64.deb
+      sudo dpkg -i libcudnn8-samples_8.2.4.15–1+cuda11.4_amd64.deb
 ```
+
+2. ติดตั้ง Pytorch โดยการ Build ผ่าน Source
 
 
