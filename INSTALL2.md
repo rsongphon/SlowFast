@@ -71,7 +71,7 @@
           sudo dpkg -i libcudnn8-samples_8.2.4.15–1+cuda11.4_amd64.deb
 ```
 
-2. ติดตั้ง Pytorch โดยการ Build ผ่าน Source ***แนะนำให้ทำใน virtual env อย่าง miniconda
+2. ติดตั้ง Pytorch โดยการ Build ผ่าน Source ***แนะนำให้ทำใน virtual env อย่าง miniconda***
 
 
 
