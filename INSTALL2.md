@@ -135,3 +135,11 @@
     
 ```
 
+17. แก้บัค Decoder Backend error
+```
+    1. ไป ที่ไฟล์ slowfast/datasets/decoder.py 
+    
+    2. แก้ไขตามนี้  https://github.com/facebookresearch/SlowFast/pull/541/files
+    หรือใช้ไฟล์ decoder.py จาก repository นี้แทน
+
+```
