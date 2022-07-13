@@ -1,4 +1,4 @@
-# วิธีการติดตั้ง PyslowFast
+# วิธีการติดตั้ง PyslowFast ให้ทำตามลำดับ
 ## Note:ทดสอบบน Ubuntu 20.4
 1. ติดตั้ง CUDA  + CUDNN
 ```
@@ -95,6 +95,8 @@
       โดยให้สังเกตุใน log ด้วยว่า detectเจอ CUDA+CUDNN
 
 ```
+
+3. ติดตั้ง ffmpeg `conda install -c conda-forge ffmpeg`
 
 
 
