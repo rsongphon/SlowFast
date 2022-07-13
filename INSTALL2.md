@@ -120,22 +120,23 @@
     python -m pip install -e detectron2
 ```
 
-16. ติดตั้ง pyslowfast
+16. ติดตั้ง pyslowfast 
 ```
     1. clone repo จากทางต้นทาง
     git clone https://github.com/facebookresearch/slowfast
+    ****** หรือ clone จาก repository นี้จะแก้บัคให้หมดแล้ว *****
     cd slowfast
     
     2. add path ของ repo นี้ไป $PYTHONPATH
     export PYTHONPATH=/path/to/slowfast:$PYTHONPATH
 
-    3. ****** ใน ไฟล์ setup.py แก้ install_requires จาก PIL >>>>> Pillow ******
+    3.  ใน ไฟล์ setup.py แก้ install_requires จาก PIL >>>>> Pillow (ข้ามขั้นตอนนี้ถ้า clone จาก repo นี้)
     
     4. ติดตั้งผ่านคำสั่ง python setup.py build develop
     
 ```
 
-17. แก้บัค Decoder Backend error
+17. แก้บัค Decoder Backend error (ข้ามขั้นตอนนี้ถ้า clone จาก repo นี้)
 ```
     1. ไป ที่ไฟล์ slowfast/datasets/decoder.py 
     
