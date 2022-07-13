@@ -93,11 +93,29 @@
       6. install pytorch
       python setup.py install
       โดยให้สังเกตุใน log ด้วยว่า detectเจอ CUDA+CUDNN
+      
 
 ```
 
 3. ติดตั้ง ffmpeg `conda install -c conda-forge ffmpeg`
-4. ติดตั้ง [torchvision](https://github.com/pytorch/vision/) ผ่าน souce
+4. ติดตั้ง [torchvision](https://github.com/pytorch/vision/) ผ่าน souce (เช็คให้ชัวร์ว่าเจอ GPU torch.cuda.is_available())
+```
+      git clone https://github.com/pytorch/vision.git
+      cd vision
+      python setup.py install
+```
+5. ติดตั้ง [fvcore](https://github.com/facebookresearch/fvcore/): `pip install 'git+https://github.com/facebookresearch/fvcore'`
+6. ติดตั้ง simplejson: `pip install simplejson`
+7. ติดตั้ง PyAV: `pip install av` ***ห้ามใช้ conda install***
+8. ติดตั้งiopath: `pip install -U iopath` or `conda install -c iopath iopath`
+9. ติดตั้ง psutil: `pip install psutil`
+10. ติดตั้ง OpenCV: `pip install opencv-python`
+11. ติดตั้ง tensorboard  `pip install tensorboard`
+12. ติดตั้ง moviepy: (สำหรับ visualizing video บน tensorboard) `conda install -c conda-forge moviepy` หรือ `pip install moviepy`
+13. ติดตั้ง  pytorchvideo pip install "git+https://github.com/facebookresearch/pytorchvideo.git"
+14. ติดตั้ง FairScale: `pip install 'git+https://github.com/facebookresearch/fairscale'`
+15. ติดตั้ง [Detectron2](https://github.com/facebookresearch/detectron2):
+```
 
-
+```
 
