@@ -61,7 +61,7 @@
           export USE_CUDNN=1 
           export USE_MKLDNN=1  
       
-      2.8 ติดตั้ง CUDNN เลือกให้ตรงกับเวอร์ชั่น CUDA ที่ติดตั้งไปก่อนหน้า (โหลดให้ตรง OS ด้วย)
+  3. ติดตั้ง CUDNN เลือกให้ตรงกับเวอร์ชั่น CUDA ที่ติดตั้งไปก่อนหน้า (โหลดให้ตรง OS ด้วย)
           https://developer.nvidia.com/rdp/cudnn-archive
       
           ดาวโหลด cuDNN Runtime, Developer and Code Samples library ใช้ตัวติดตั้ว Deb(.deb) 
@@ -72,6 +72,29 @@
 ```
 
 2. ติดตั้ง Pytorch โดยการ Build ผ่าน Source ***แนะนำให้ทำใน virtual env อย่าง miniconda***
+```
+      1. อัพเดต conda
+      conda update -n base -c defaults conda
+      
+      2. สร้าง virtual env ในที่นี้ใช้ python 3.9 (ตาม requirement ของ pyslowfast)
+      conda create --name (ชื่อ env) python==3.9
+      conda activate (ชื่อenv)
+      
+      3. ลง dependencies ที่จำเป็น
+      conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
+      
+      4. Clone pytorch repository
+      git clone --recursive https://github.com/pytorch/pytorch
+      cd pytorch
+      
+      5. กำหนด  CMAKE_PREFIX_PATH 
+      export CMAKE_PREFIX_PATH="$~/miniconda3/envs/(ชื่อenv)" << กรณีใช้ miniconda
+      
+      6. install pytorch
+      python setup.py install
+      โดยให้สังเกตุใน log ด้วยว่า detectเจอ CUDA+CUDNN
+
+```
 
 
 
