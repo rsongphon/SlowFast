@@ -116,6 +116,22 @@
 14. ติดตั้ง FairScale: `pip install 'git+https://github.com/facebookresearch/fairscale'`
 15. ติดตั้ง [Detectron2](https://github.com/facebookresearch/detectron2):
 ```
+    git clone https://github.com/facebookresearch/detectron2.git
+    python -m pip install -e detectron2
+```
 
+16. ติดตั้ง pyslowfast
+```
+    1. clone repo จากทางต้นทาง
+    git clone https://github.com/facebookresearch/slowfast
+    cd slowfast
+    
+    2. add path ของ repo นี้ไป $PYTHONPATH
+    export PYTHONPATH=/path/to/slowfast:$PYTHONPATH
+
+    3. ****** ใน ไฟล์ setup.py แก้ install_requires จาก PIL >>>>> Pillow ******
+    
+    4. ติดตั้งผ่านคำสั่ง python setup.py build develop
+    
 ```
 
